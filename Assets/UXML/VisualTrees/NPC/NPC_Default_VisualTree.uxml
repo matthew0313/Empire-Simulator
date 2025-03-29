@@ -1,0 +1,55 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UXML/Styles/Areas.uss?fileID=7433441132597879392&amp;guid=fce2e6ec40739dc44949a265625f996a&amp;type=3#Areas" />
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Assignments" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 20px;" />
+        <uie:PropertyField binding-path="island">
+            <ui:Label tabindex="-1" text="Island" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+        <uie:PropertyField binding-path="m_home">
+            <ui:Label tabindex="-1" text="Home" display-tooltip-when-elided="true" enable-rich-text="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+        <uie:PropertyField binding-path="workplace">
+            <ui:Label tabindex="-1" text="Work" display-tooltip-when-elided="true" enable-rich-text="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+    </ui:VisualElement>
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Current State" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 20px;" />
+        <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="StateRoute" binding-path="stateRoute" style="color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement class="section" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Energy" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 20px;" />
+            <uie:PropertyField label="Energy" binding-path="energy" />
+            <ui:Button text="Add 100" display-tooltip-when-elided="true" name="AddEnergyButton" />
+            <ui:Button text="Set to 0" display-tooltip-when-elided="true" name="SetEnergyButton" />
+        </ui:VisualElement>
+        <ui:VisualElement class="section" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Level" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 20px;" />
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Label tabindex="-1" text="Current Level:" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); width: 100px;" />
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="level" name="Level" style="color: rgb(255, 255, 255); width: 40px;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Label tabindex="-1" text="Exp:" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); width: 100px; flex-direction: column;" />
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="experience" name="Experience" style="color: rgb(255, 255, 255); width: 40px; flex-direction: column;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Label tabindex="-1" text="Next:" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); width: 100px; flex-direction: column;" />
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="requiredExp" name="Experience" style="color: rgb(255, 255, 255); width: 40px; flex-direction: column;" />
+            </ui:VisualElement>
+            <ui:ProgressBar value="0" name="LevelProgressBar" binding-path="expFilled" high-value="1" />
+            <ui:Button text="Level up" display-tooltip-when-elided="true" name="LevelUpButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Buffs" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 20px;" />
+        <ui:VisualElement style="flex-grow: 1; padding-right: 5px; padding-left: 5px;">
+            <uie:PropertyField binding-path="buffs" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Model" display-tooltip-when-elided="true" class="title" />
+        <uie:PropertyField binding-path="equippedAnchor" />
+        <uie:PropertyField binding-path="sheatheAnchor" />
+    </ui:VisualElement>
+</ui:UXML>

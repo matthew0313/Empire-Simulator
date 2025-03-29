@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e27ec9ecf012c34e9dc2cf28618d420, type: 3}
+  m_Name: Copper Axe
+  m_EditorClassIdentifier: 
+  m_result:
+    item: {fileID: 11400000, guid: c2136d8a96ee21b49846a3b53dd0d2d7, type: 2}
+    count: 1
+  m_ingredients:
+  - item: {fileID: 11400000, guid: 6bdce0fb121a6b04bb170abceb6e5213, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: daca5b34b6ac80e4ea1694992a12adb3, type: 2}
+    count: 3
+  m_requiredWorkAmount: 20
+  m_experienceReward: 100

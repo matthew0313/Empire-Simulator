@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae37c0a772973444912a6835c397c14, type: 3}
+  m_Name: Berry Pie
+  m_EditorClassIdentifier: 
+  m_Description: A normal, tasteless bread eaten only to fill one's hunger with no
+    bonus at all.
+  m_image: {fileID: 0}
+  m_energy: 50
+  priority: 1

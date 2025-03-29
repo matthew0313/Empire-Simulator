@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c5a441e0a1caee4792259b51cb17d79, type: 3}
+  m_Name: Iron
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_maxHealth: 50
+  m_respawnTime: 60
+  m_drops: {fileID: 11400000, guid: 7f170c3b7f445e24691b8a90585dcaf4, type: 2}
+  m_experienceGiven: 500
+  m_tier: 2

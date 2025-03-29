@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UXML/Styles/Areas.uss?fileID=7433441132597879392&amp;guid=fce2e6ec40739dc44949a265625f996a&amp;type=3#Areas" />
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Ore Selection" display-tooltip-when-elided="true" class="title" />
+        <uie:PropertyField binding-path="priority" label="Selection Mode" name="MinerModeEnumField">
+            <ui:Label tabindex="-1" text="Selection Mode" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+        <uie:PropertyField binding-path="targetOreType" label="Selected Ore" name="MinerTargetOreSelection" style="display: none;">
+            <ui:Label tabindex="-1" text="Selection Mode" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+    </ui:VisualElement>
+</ui:UXML>

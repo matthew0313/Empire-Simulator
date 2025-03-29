@@ -1,0 +1,58 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UXML/Styles/Areas.uss?fileID=7433441132597879392&amp;guid=fce2e6ec40739dc44949a265625f996a&amp;type=3#Areas" />
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Money" display-tooltip-when-elided="true" class="title" />
+        <uie:PropertyField binding-path="money" />
+    </ui:VisualElement>
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Island" display-tooltip-when-elided="true" class="title" style="-unity-font-style: normal;" />
+        <uie:PropertyField binding-path="currentIsland">
+            <ui:Label tabindex="-1" text="Current Island: " display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+        <uie:PropertyField binding-path="caimedIslands" name="ClaimedIslandsField">
+            <ui:Label tabindex="-1" text="Claimed islands:" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+        <uie:PropertyField binding-path="m_travelDist" label="Travel Distance">
+            <ui:Label tabindex="-1" text="Travel Distance" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+    </ui:VisualElement>
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Time" display-tooltip-when-elided="true" class="title" style="color: rgb(255, 255, 255); font-size: 20px;" />
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Current hour:" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="hour" name="HourLabel" style="color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Counter:" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="counter" name="HourLabel" style="color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Button text="Add 1 hour" display-tooltip-when-elided="true" name="AddTimeButton" style="height: 30px; width: 120px;" />
+            <ui:Button text="Subtract 1 hour" display-tooltip-when-elided="true" name="SubtractTimeButton" style="width: 120px; height: 30px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="section" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Add To Storage" display-tooltip-when-elided="true" class="title" style="font-size: 20px; color: rgb(255, 255, 255);" />
+        <uie:PropertyField label="Adding Item" binding-path="addingItem" name="AddToStorageItemField">
+            <ui:Label tabindex="-1" text="Adding Item" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+        </uie:PropertyField>
+        <ui:IntegerField label="Adding Amount" value="0" binding-path="addAmount" style="color: rgb(255, 255, 255); font-size: 14px;" />
+        <ui:Button text="Add" display-tooltip-when-elided="true" name="AddToStorageButton" />
+        <ui:Button text="Clear Storage" display-tooltip-when-elided="true" name="ClearStorageButton" />
+        <ui:ListView />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement class="section" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Unlocks" display-tooltip-when-elided="true" class="title" />
+            <uie:PropertyField binding-path="startingStructures">
+                <ui:Label tabindex="-1" text="Starting Buildings" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+            </uie:PropertyField>
+        </ui:VisualElement>
+        <ui:VisualElement class="section" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Storage" display-tooltip-when-elided="true" class="title" />
+            <uie:PropertyField binding-path="startingStorage">
+                <ui:Label tabindex="-1" text="Starting Storage" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255);" />
+            </uie:PropertyField>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

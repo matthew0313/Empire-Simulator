@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/Styles/GameUIs.uss?fileID=7433441132597879392&amp;guid=636f8dead3a9de5489cc9b7d2af92548&amp;type=3#GameUIs" />
+    <ui:VisualElement class="section areas" style="flex-grow: 1; align-items: center;">
+        <ui:VisualElement style="flex-grow: 1; height: 5px; background-color: rgb(255, 255, 255); position: absolute; width: 840px; top: 80px;" />
+        <ui:Label tabindex="-1" text="Inventory" display-tooltip-when-elided="true" style="font-size: 40px; position: absolute; top: 20px; color: rgb(255, 255, 255); left: 20px;" />
+    </ui:VisualElement>
+</ui:UXML>
